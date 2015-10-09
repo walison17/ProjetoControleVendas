@@ -19,7 +19,7 @@ public class RepositorioClientes {
     public static final ArrayList<Cliente> listaClientes = new ArrayList<>();
 
     public static void rotinaInserirClientes(){
-        Cliente c = new Cliente("walison filipe", null, "999.999.999-99", "15/11/1992", null, null, null, null, null, null, null, null);
+        Cliente c = new Cliente("WALISON FILIPE TORRES MENDES", "9999999", "999.999.999-99", "15/11/1992", "RUA TESTE", "CARUARU", "BAIRRO TESTE", "PE", "55000-00", "TESTE@TESTE.COM.BR", "(81) 3737-3737", "(81) 9999-9999");
         listaClientes.add(c); 
     }
     
