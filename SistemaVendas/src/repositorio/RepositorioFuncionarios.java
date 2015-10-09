@@ -18,8 +18,16 @@ public class RepositorioFuncionarios {
     
     //metodos 
     public static void rotinaInserirFuncionarios(){
+  
         Funcionario f1 = new Funcionario("FUNCIONÁRIO1", "9999999", "999.999.999-99", "12/12/12", "ENDEREÇO TESTE", "CARUARU", "BAIRRO TESTE", "PE", "55000.00", "TESTE@TESTE.COM.BR", "(81) 3737-3737", "(81) 99999-9999", "SETOR1", "VENDEDOR", 1.000, 2, "09/10/2015");
+        Funcionario f2 = new Funcionario("FUNCIONÁRIO2", "9999999", "999.999.999-99", "12/12/12", "ENDEREÇO TESTE", "CARUARU", "BAIRRO TESTE", "PE", "55000.00", "TESTE@TESTE.COM.BR", "(81) 3737-3737", "(81) 99999-9999", "SETOR1", "VENDEDOR", 1.000, 2, "09/10/2015");
+        Funcionario f3 = new Funcionario("FUNCIONÁRIO3", "9999999", "999.999.999-99", "12/12/12", "ENDEREÇO TESTE", "CARUARU", "BAIRRO TESTE", "PE", "55000.00", "TESTE@TESTE.COM.BR", "(81) 3737-3737", "(81) 99999-9999", "SETOR1", "VENDEDOR", 1.000, 2, "09/10/2015");
+        Funcionario f4 = new Funcionario("FUNCIONÁRIO4", "9999999", "999.999.999-99", "12/12/12", "ENDEREÇO TESTE", "CARUARU", "BAIRRO TESTE", "PE", "55000.00", "TESTE@TESTE.COM.BR", "(81) 3737-3737", "(81) 99999-9999", "SETOR1", "VENDEDOR", 1.000, 2, "09/10/2015");
+ 
         listaFuncionarios.add(f1); 
+        listaFuncionarios.add(f2);
+        listaFuncionarios.add(f3);
+        listaFuncionarios.add(f4);
     }
     
     
@@ -34,7 +42,7 @@ public class RepositorioFuncionarios {
     public static Funcionario pesquisarFuncionarioNome(String nome){
         Funcionario f = null; 
         for (Funcionario get : listaFuncionarios) {
-            if (get != null && get.getNome().equals(nome)){
+            if (get != null && get.getNome().equalsIgnoreCase(nome)){
                 f = get;
                 break; 
             }
