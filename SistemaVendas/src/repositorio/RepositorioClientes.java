@@ -19,8 +19,15 @@ public class RepositorioClientes {
     public static final ArrayList<Cliente> listaClientes = new ArrayList<>();
 
     public static void rotinaInserirClientes(){
-        Cliente c = new Cliente("walison filipe", null, "999.999.999-99", "15/11/1992", null, null, null, null, null, null, null, null);
-        listaClientes.add(c); 
+        Cliente c1 = new Cliente("WALISON FILIPE TORRES MENDES", "9999999", "999.999.999-99", "15/11/1992", "RUA TESTE", "CARUARU", "BAIRRO TESTE", "PE", "55000-00", "TESTE@TESTE.COM.BR", "(81) 3737-3737", "(81) 99999-9999");
+        Cliente c2 = new Cliente("CLIENTE2", "9999999", "999.999.999-99", "15/11/1992", "RUA TESTE", "CARUARU", "BAIRRO TESTE", "PE", "55000-00", "TESTE@TESTE.COM.BR", "(81) 3737-3737", "(81) 99999-9999");
+        Cliente c3 = new Cliente("CLIENTE3", "9999999", "999.999.999-99", "15/11/1992", "RUA TESTE", "CARUARU", "BAIRRO TESTE", "PE", "55000-00", "TESTE@TESTE.COM.BR", "(81) 3737-3737", "(81) 99999-9999");
+        Cliente c4 = new Cliente("CLIENTE4", "9999999", "999.999.999-99", "15/11/1992", "RUA TESTE", "CARUARU", "BAIRRO TESTE", "PE", "55000-00", "TESTE@TESTE.COM.BR", "(81) 3737-3737", "(81) 99999-9999");
+
+        listaClientes.add(c1); 
+        listaClientes.add(c2);
+        listaClientes.add(c3);
+        listaClientes.add(c4);
     }
     
     
@@ -47,7 +54,7 @@ public class RepositorioClientes {
     public static Cliente pesquisarClienteNome(String nome) {
         Cliente c = null;
         for (Cliente get : listaClientes) {
-            if (get != null && get.getNome().equals(nome)) {
+            if (get != null && get.getNome().equalsIgnoreCase(nome)) {
                 c = get;
                 break;
             }

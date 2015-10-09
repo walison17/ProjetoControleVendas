@@ -270,10 +270,12 @@ public class TelaCliente extends javax.swing.JFrame {
             if (jTPesquisarCliente.getText().length() != 0) {
                 //pesquisa por nome 
                 if (jComboBox1.getSelectedIndex() == 0) {
+                   
                     Cliente c = RepositorioClientes.pesquisarClienteNome(jTPesquisarCliente.getText().toUpperCase());
                     int linhaCliente = clientesTableModel.getLinhaCliente(c);
 
                     if (c != null && linhaCliente != -1) {
+                        
                         //mensagem
                         JOptionPane.showMessageDialog(rootPane, "Cliente encontrado!");
 

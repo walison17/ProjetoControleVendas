@@ -20,10 +20,10 @@ public class RepositorioProdutos {
     
     public static void rotinaAdicionarProdutos(){
         //criando
-        Produto p1 = new Produto("Playstaion 4", "Video-game de última geração", 2000, 1200, 50, 200);
-        Produto p2 = new Produto("Xbox one", "Video-game última geração", 1800, 1000, 50, 200);
-        Produto p3 = new Produto("The Wither 3", "jogo ps4", 165, 80, 50, 500);
-        Produto p4 = new Produto("Fifa 16","Jogo ps4", 200, 100, 100, 600);
+        Produto p1 = new Produto("PLAYSTATION 4", "VIDEO GAME ULTIMA GERAÇÃO, SONY", 2000, 1200, 50, 200);
+        Produto p2 = new Produto("XBOX ONE", "VIDEO GAME ULTIMA GERAÇÃO, MICROSOFT", 1800, 1000, 50, 200);
+        Produto p3 = new Produto("THE WITCHER 3", "MELHOR JOGO DE PS4", 165, 80, 50, 500);
+        Produto p4 = new Produto("FIFA 16","JOGO PS4", 200, 100, 100, 600);
     
         //adicionando 
         listaProdutos.add(p1);
@@ -55,7 +55,7 @@ public class RepositorioProdutos {
     public static Produto pesquisarProdutoNome(String nome){
         Produto p = null; 
         for (Produto get : listaProdutos) {
-            if (get != null && get.getNome().equals(nome)){
+            if (get != null && get.getNome().equalsIgnoreCase(nome)){
                 p = get; 
                 break;
             }
