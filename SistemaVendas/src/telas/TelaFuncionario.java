@@ -232,7 +232,9 @@ public class TelaFuncionario extends javax.swing.JFrame {
                 int opcao = JOptionPane.showConfirmDialog(this, f.getNome(), "Excluir cliente?", JOptionPane.YES_NO_OPTION);
 
                 if (opcao == JOptionPane.YES_OPTION) {
-                    funcionariosTableModel.excluirFuncionario(f);
+                    RepositorioFuncionarios.excluirFuncionario(f);
+                    funcionariosTableModel.atualizarTabela();
+                    
                 } else if (opcao == JOptionPane.NO_OPTION) {
                     System.out.print("exclusão abortada");
                 }

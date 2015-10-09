@@ -247,6 +247,8 @@ public class TelaCliente extends javax.swing.JFrame {
 
                 if (opcao == JOptionPane.YES_OPTION) {
                     RepositorioClientes.removerCliente(c);
+                    clientesTableModel.atualizarTabela();
+                    
                 } else if (opcao == JOptionPane.NO_OPTION) {
                     System.out.print("exclusão abortada");
                 }

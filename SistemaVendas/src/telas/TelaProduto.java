@@ -314,6 +314,8 @@ public class TelaProduto extends javax.swing.JFrame {
 
                 if (opcao == JOptionPane.YES_OPTION) {
                     RepositorioProdutos.removerProdutos(p);
+                    produtosTableModel.atualizarTabela();
+                    
                 } else if (opcao == JOptionPane.NO_OPTION) {
                     System.out.print("exclusão abortada");
                 }

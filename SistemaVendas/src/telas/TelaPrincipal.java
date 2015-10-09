@@ -56,17 +56,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jToggleButton1 = new javax.swing.JToggleButton();
         jSeparator1 = new javax.swing.JSeparator();
-        jPanel2 = new javax.swing.JPanel();
-        clientButton = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        exitButton = new javax.swing.JLabel();
-        ClienteButton = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        vendasButton = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        ProdutosButton = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        jSlider1 = new javax.swing.JSlider();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 100), new java.awt.Dimension(0, 100), new java.awt.Dimension(32767, 100));
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -75,194 +65,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
 
         jToggleButton1.setText("jToggleButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFocusTraversalPolicyProvider(true);
-        setMaximumSize(new java.awt.Dimension(1024, 768));
-        setMinimumSize(new java.awt.Dimension(1024, 768));
-        setPreferredSize(new java.awt.Dimension(1024, 768));
+        setMaximumSize(new java.awt.Dimension(763, 284));
+        setMinimumSize(new java.awt.Dimension(763, 284));
+        setPreferredSize(null);
         setResizable(false);
-
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel2.setPreferredSize(new java.awt.Dimension(1920, 118));
-
-        clientButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/ClientButtonDefault.png"))); // NOI18N
-        clientButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                clientButtonMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                clientButtonMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                clientButtonMouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                clientButtonMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                clientButtonMouseReleased(evt);
-            }
-        });
-
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel2.setText("Clientes");
-
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel1.setText("Sair");
-
-        exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/exitButtonDefault.png"))); // NOI18N
-        exitButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                exitButtonMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                exitButtonMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                exitButtonMouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                exitButtonMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                exitButtonMouseReleased(evt);
-            }
-        });
-
-        ClienteButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/clienteButtonDefault.png"))); // NOI18N
-        ClienteButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ClienteButtonMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ClienteButtonMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ClienteButtonMouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                ClienteButtonMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                ClienteButtonMouseReleased(evt);
-            }
-        });
-
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel3.setText("Funcionários");
-
-        vendasButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/vendasButtonDefault.png"))); // NOI18N
-        vendasButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                vendasButtonMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                vendasButtonMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                vendasButtonMouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                vendasButtonMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                vendasButtonMouseReleased(evt);
-            }
-        });
-
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel4.setText("Vendas");
-
-        ProdutosButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/ProdutoButtonDefault.png"))); // NOI18N
-        ProdutosButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ProdutosButtonMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ProdutosButtonMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ProdutosButtonMouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                ProdutosButtonMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                ProdutosButtonMouseReleased(evt);
-            }
-        });
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setText("Produtos");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ClienteButton)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel2)))
-                .addGap(34, 34, 34)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(clientButton)
-                    .addComponent(jLabel3))
-                .addGap(40, 40, 40)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel6))
-                    .addComponent(ProdutosButton))
-                .addGap(44, 44, 44)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(vendasButton)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel4)))
-                .addGap(437, 437, 437)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jLabel1))
-                    .addComponent(exitButton))
-                .addContainerGap(910, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(exitButton))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(ClienteButton)
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
-                        .addGap(15, 15, 15))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(clientButton)
-                            .addComponent(vendasButton)
-                            .addComponent(ProdutosButton))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel6))
-                        .addGap(0, 0, Short.MAX_VALUE))))
-        );
 
         jButton3.setText("Relatório Vendas");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -313,53 +129,111 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton8.setText("Clientes");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        jButton9.setText("Funcionários");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jButton10.setText("Produtos");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
+        jButton11.setText("Realizar venda");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+
+        jButton12.setText("Sair");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6))
-                .addGap(51, 51, 51)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(74, 74, 74)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
+                                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE))
+                        .addGap(81, 81, 81)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton6)))
+                    .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(785, 785, 785))
+                .addContainerGap())
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton10, jButton11, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8, jButton9});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(24, 24, 24)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jButton4)
-                                .addComponent(jButton1))
+                                .addComponent(jButton8))
                             .addGap(18, 18, 18)
-                            .addComponent(jButton5)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jButton5)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jButton6))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jButton9)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jButton10)))
                             .addGap(18, 18, 18)
-                            .addComponent(jButton6)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton3))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(41, 41, 41)
-                            .addComponent(jButton2)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton7))))
-                .addContainerGap(212, Short.MAX_VALUE))
+                            .addComponent(jButton3)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(47, 47, 47)
+                                .addComponent(jButton2)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton7)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton11)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addComponent(jButton12)
+                .addGap(24, 24, 24))
         );
 
         pack();
@@ -374,144 +248,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         telaProdutoAdicionar.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void clientButtonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clientButtonMouseReleased
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/ClientButtonDefault.png"));
-        clientButton.setIcon(i);
-    }//GEN-LAST:event_clientButtonMouseReleased
-
-    private void clientButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clientButtonMousePressed
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/ClientButtonPressed.png"));
-        clientButton.setIcon(i);
-    }//GEN-LAST:event_clientButtonMousePressed
-
-    private void clientButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clientButtonMouseExited
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/ClientButtonDefault.png"));
-        clientButton.setIcon(i);
-    }//GEN-LAST:event_clientButtonMouseExited
-
-    private void clientButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clientButtonMouseEntered
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/ClientButtonEntered.png"));
-        clientButton.setIcon(i);
-    }//GEN-LAST:event_clientButtonMouseEntered
-
-    private void clientButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clientButtonMouseClicked
-        if (telaFuncionario == null){
-            telaFuncionario = new TelaFuncionario();       
-        }
-        telaFuncionario.setVisible(true);
-    }//GEN-LAST:event_clientButtonMouseClicked
-
-    private void exitButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitButtonMouseEntered
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/exitButtonEntered.png"));
-        exitButton.setIcon(i);
-    }//GEN-LAST:event_exitButtonMouseEntered
-
-    private void exitButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitButtonMouseClicked
-        System.exit(0);
-    }//GEN-LAST:event_exitButtonMouseClicked
-
-    private void exitButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitButtonMouseExited
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/exitButtonDefault.png"));
-        exitButton.setIcon(i);
-    }//GEN-LAST:event_exitButtonMouseExited
-
-    private void exitButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitButtonMousePressed
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/exitButtonPressed.png"));
-        exitButton.setIcon(i);
-    }//GEN-LAST:event_exitButtonMousePressed
-
-    private void exitButtonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitButtonMouseReleased
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/exitButtonDefault.png"));
-        exitButton.setIcon(i);
-    }//GEN-LAST:event_exitButtonMouseReleased
-
-    private void ClienteButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ClienteButtonMouseEntered
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/clienteButtonEntered.png"));
-        ClienteButton.setIcon(i);
-    }//GEN-LAST:event_ClienteButtonMouseEntered
-
-    private void ClienteButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ClienteButtonMouseExited
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/clienteButtonDefault.png"));
-        ClienteButton.setIcon(i);
-    }//GEN-LAST:event_ClienteButtonMouseExited
-
-    private void ClienteButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ClienteButtonMousePressed
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/clienteButtonPressed.png"));
-        ClienteButton.setIcon(i);
-    }//GEN-LAST:event_ClienteButtonMousePressed
-
-    private void ClienteButtonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ClienteButtonMouseReleased
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/clienteButtonDefault.png"));
-        ClienteButton.setIcon(i);
-    }//GEN-LAST:event_ClienteButtonMouseReleased
-
-    private void ClienteButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ClienteButtonMouseClicked
-         if (telaCliente == null){
-            telaCliente = new TelaCliente();
-        }
-        telaCliente.setVisible(true);
-    }//GEN-LAST:event_ClienteButtonMouseClicked
-
-    private void vendasButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vendasButtonMouseEntered
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/vendasButtonEntered.png"));
-        vendasButton.setIcon(i);
-    }//GEN-LAST:event_vendasButtonMouseEntered
-
-    private void vendasButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vendasButtonMouseExited
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/vendasButtonDefault.png"));
-        vendasButton.setIcon(i);
-    }//GEN-LAST:event_vendasButtonMouseExited
-
-    private void vendasButtonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vendasButtonMouseReleased
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/vendasButtonDefault.png"));
-        vendasButton.setIcon(i);
-    }//GEN-LAST:event_vendasButtonMouseReleased
-
-    private void vendasButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vendasButtonMousePressed
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/vendasButtonPressed.png"));
-        vendasButton.setIcon(i);
-    }//GEN-LAST:event_vendasButtonMousePressed
-
-    private void vendasButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vendasButtonMouseClicked
-        if (telaVenda == null){
-            telaVenda = new TelaVenda();
-        }
-        telaVenda.setVisible(true);
-    }//GEN-LAST:event_vendasButtonMouseClicked
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          if (telaClienteAdicionar == null) {
              telaClienteAdicionar = new TelaClienteAdicionar();    
          }
          telaClienteAdicionar.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void ProdutosButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProdutosButtonMouseEntered
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/produtoButtonEntered.png"));
-        ProdutosButton.setIcon(i);
-    }//GEN-LAST:event_ProdutosButtonMouseEntered
-
-    private void ProdutosButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProdutosButtonMouseClicked
-       if (telaProduto == null){
-           telaProduto = new TelaProduto(); 
-       }
-       telaProduto.setVisible(true);
-    }//GEN-LAST:event_ProdutosButtonMouseClicked
-
-    private void ProdutosButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProdutosButtonMousePressed
-         ImageIcon i = new ImageIcon(getClass().getResource("/icones/produtoButtonPressed.png"));
-        ProdutosButton.setIcon(i);
-    }//GEN-LAST:event_ProdutosButtonMousePressed
-
-    private void ProdutosButtonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProdutosButtonMouseReleased
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/produtoButtonDefault.png"));
-        ProdutosButton.setIcon(i);
-    }//GEN-LAST:event_ProdutosButtonMouseReleased
-
-    private void ProdutosButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProdutosButtonMouseExited
-        ImageIcon i = new ImageIcon(getClass().getResource("/icones/produtoButtonDefault.png"));
-        ProdutosButton.setIcon(i);
-    }//GEN-LAST:event_ProdutosButtonMouseExited
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
        if (relatorioVendas == null){
@@ -547,6 +289,38 @@ public class TelaPrincipal extends javax.swing.JFrame {
         }
         relatorioFuncionarios.setVisible(true);
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        if (telaVenda == null){
+            telaVenda = new TelaVenda();
+        }
+        telaVenda.setVisible(true);
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        if (telaProduto == null){
+            telaProduto = new TelaProduto();
+        }
+        telaProduto.setVisible(true);
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        if (telaFuncionario == null){
+            telaFuncionario = new TelaFuncionario(); 
+        }
+        telaFuncionario.setVisible(true);
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        if (telaCliente == null){
+            telaCliente = new TelaCliente();
+        }
+        telaCliente.setVisible(true); 
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -584,26 +358,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel ClienteButton;
-    private javax.swing.JLabel ProdutosButton;
-    private javax.swing.JLabel clientButton;
-    private javax.swing.JLabel exitButton;
     private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSlider jSlider1;
     private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JLabel vendasButton;
     // End of variables declaration//GEN-END:variables
 }
