@@ -690,7 +690,7 @@ public class TelaVenda extends javax.swing.JFrame {
         if (!ListaPedidos.carrinhoCompras.isEmpty()) {
 
             if (jComboBox1.getSelectedIndex() == 0) {
-                double v = ListaPedidos.valorTotal() * 0.01;
+                double v = ListaPedidos.valorTotal() * 0.1;
                 jTDesconto.setText(v + "");
                 double vT = ListaPedidos.valorTotal() - v;
                 jTValorTotal.setText(vT + "");

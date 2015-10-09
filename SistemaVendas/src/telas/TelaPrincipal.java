@@ -70,16 +70,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         jToggleButton1.setText("jToggleButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Sistema de vendas");
         setFocusTraversalPolicyProvider(true);
-        setMaximumSize(new java.awt.Dimension(763, 284));
-        setMinimumSize(new java.awt.Dimension(763, 284));
-        setPreferredSize(null);
+        setMaximumSize(new java.awt.Dimension(700, 284));
+        setMinimumSize(new java.awt.Dimension(700, 284));
         setResizable(false);
 
+        jButton3.setForeground(new java.awt.Color(0, 0, 255));
         jButton3.setText("Relatório Vendas");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +89,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setForeground(new java.awt.Color(0, 0, 255));
         jButton4.setText("Relátorio Produtos");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +97,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setForeground(new java.awt.Color(0, 0, 255));
         jButton5.setText("Relatório Clientes");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +105,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setForeground(new java.awt.Color(0, 0, 255));
         jButton6.setText("Relatório Funcionários");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,6 +113,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setForeground(new java.awt.Color(0, 0, 255));
         jButton1.setText("Cadastrar cliente");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,6 +121,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setForeground(new java.awt.Color(0, 0, 255));
         jButton2.setText("Cadastrar produto");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,6 +129,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setForeground(new java.awt.Color(0, 0, 255));
         jButton7.setText("Cadastrar Funcionário");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,6 +137,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton8.setForeground(new java.awt.Color(0, 0, 255));
         jButton8.setText("Clientes");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,6 +145,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton9.setForeground(new java.awt.Color(0, 0, 255));
         jButton9.setText("Funcionários");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,6 +153,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton10.setForeground(new java.awt.Color(0, 0, 255));
         jButton10.setText("Produtos");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,6 +161,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton11.setForeground(new java.awt.Color(0, 0, 255));
         jButton11.setText("Realizar venda");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,6 +175,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jButton12ActionPerformed(evt);
             }
         });
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel1.setText("Sistema de vendas ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -194,6 +209,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(157, 157, 157)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton10, jButton11, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8, jButton9});
@@ -201,7 +220,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -222,18 +243,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
                             .addGap(18, 18, 18)
                             .addComponent(jButton3)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(47, 47, 47)
-                                .addComponent(jButton2)))
+                        .addComponent(jButton1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2)
                         .addGap(18, 18, 18)
                         .addComponent(jButton7)
                         .addGap(18, 18, 18)
                         .addComponent(jButton11)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addGap(18, 21, Short.MAX_VALUE)
                 .addComponent(jButton12)
-                .addGap(24, 24, 24))
+                .addGap(15, 15, 15))
         );
 
         pack();
@@ -371,6 +390,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSlider jSlider1;
     private javax.swing.JToggleButton jToggleButton1;
